@@ -43,47 +43,28 @@ h) Save and export the results to an HDF5 file named AlphabetSoupCharity.h5
 
 If necessary, add a second hidden layer with an appropriate activation function.  
 
-Step 3:  
-
-
-
-
-
-
-
-
-
-
 Step 3: Optimize the Model
-Using your knowledge of TensorFlow, optimize your model to achieve a target predictive accuracy higher than 75%.
+I made three adjustments to the initial model, attempting to optimize the model to achieve a target predictive accuracy higher than 75%.  
+I created a new Google Colab file, AlphabetSoupCharity_Optimization.ipynb, using the same dependencies, dataset, and preprocessing techniques as before. This file is AlphabetSoupCharity_Optimization.h5.    
+I modified the original model is three ways:  
+a) Adding more neurons to a hidden layer  
+b) Adding more neurons to a hidden layer + Adding more hidden layers   
+c) Adding more neurons to a hidden layer + Adding more hidden layers + Adding the number of epochs to the training regimen  
 
-Use any or all of the following methods to optimize your model:
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Orig_a.png  
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Orig_b.png
 
-Adjust the input data to ensure that no variables or outliers are causing confusion in the model, such as:
-Dropping more or fewer columns.
-Creating more bins for rare occurrences in columns.
-Increasing or decreasing the number of values for each bin.
-Add more neurons to a hidden layer.
-Add more hidden layers.
-Use different activation functions for the hidden layers.
-Add or reduce the number of epochs to the training regimen.
-Note: If you make at least three attempts at optimizing your model, you will not lose points if your model does not achieve target performance.
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_01_a.png  
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Op01_b.png  
 
-Create a new Google Colab file and name it AlphabetSoupCharity_Optimization.ipynb.
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_02_a.png  
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_02_b.png  
 
-Import your dependencies and read in the charity_data.csv to a Pandas DataFrame.
-
-Preprocess the dataset as you did in Step 1. Be sure to adjust for any modifications that came out of optimizing the model.
-
-Design a neural network model, and be sure to adjust for modifications that will optimize the model to achieve higher than 75% accuracy.
-
-Save and export your results to an HDF5 file. Name the file AlphabetSoupCharity_Optimization.h5.
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_03_a.png  
+https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_03_b.png  
 
 
 
 
 
 
-
-
-This step prepares you for Step 2, where you'll compile, train, and evaluate the neural network model.
