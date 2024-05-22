@@ -58,7 +58,7 @@ The initial model contained 3 layers: an input, an output, and one hidden.  Laye
 
 The first attempt a optimizing the model entailed holding the number of layers and epochs the same but doubling the number of neurons in layers 1 and 2. This resulted in a total number of neurons equal to 25. This adjustment resulted in a loss of 1.128 and an accuracy of 0.664, which means the adjusted model was slightly better at predicting nonprofit success. 
 
-![Opt_01_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/5d25c091-88a4-440d-b30d-8bdb9fd22d44)
+![Opt_01_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/bf8032e3-d129-47a6-98ff-b3881ee393d0)
 ![Op01_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/80222921-7c8c-43fd-9f8a-cfe0c12dd1b4)
 
 For the second attempt at optimizing the model, I "incremented" it by adding two new hidden layers. Layers 1 through 4 contained 12 neurons each, and layer 5 remained with 1. Total number of neurons was 49. Despite the training data yielding accuracy scores around 0.72, the test data in this version of the model only reached 0.610 after 10 epochs.
