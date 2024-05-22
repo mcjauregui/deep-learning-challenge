@@ -51,16 +51,26 @@ a) Adding more neurons to a hidden layer
 b) Adding more neurons to a hidden layer + Adding more hidden layers   
 c) Adding more neurons to a hidden layer + Adding more hidden layers + Adding the number of epochs to the training regimen  
 
+Analysis:
+
+The initial model contained 3 layers: an input, an output, and one hidden.  Layers 1 and 2 contained 6 neurons and layer 3 contained 1. Across the 10 epochs, loss fluctuated by stayed around the 0.565 point. Similarly, accuracy remained around 0.72.   The final loss and accuracy values with the test data ended up at 0.733 and 0.556. The model did not do a good job at predicting nonprofit success.   
+
 ![Orig_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/dc90f53a-c11f-49c5-adcf-c5cfef27ce27)
 
 ![Orig_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/995ccdb0-d4b8-407b-a0f7-5cfce584a0e8)
+
+The first attempt a optimizing the model entailed holding the number of layers and epochs the same but doubling the number of neurons in layers 1 and 2. This resulted in a total number of parameters equal to 709. This adjustment resulted in a loss of 1.128 and an accuracy of 0.664, which means the adjusted model is slightly better at predicting nonprofit success. 
 
 ![Opt_01_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/9a23f2d7-c277-4184-9c07-87eadf93cd42)
 
 ![Op01_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/995953e9-153d-4ec7-bc9b-bab5de9e4ee7)
 
+For the second attempt at optimizing the model, I "incremented" it by adding two new hidden layers. Layers 1 through 4 contained 12 neurons each, and layer 5 remained with 1. Total number of parameters grew to 1,021. Despite the training data yielding accuracy scores around 0.72, the test data in this version of the model only reached 0.610 after 10 epochs.
+
 ![Opt_02_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/1d826fb7-1a73-4a08-bf28-a6baeacc28a4)
 ![Opt_02_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/c09b2d64-01e0-439a-b6c6-cec1f56695ea)
+
+In the thrid optimization attempts, I increased only the number of epochs during training. Layers and neurons remained the same as in the previous optimization attempt. Again, accuracy scores during the training phase ranged between 0.72 and 0.73, but the model scored only a  0.624 with the testing data. Additionally, the model triggered an early stop at epoch 24. By epoch 25 the accuracy scores were not improving so the model finshed before reaching 100 epochs. 
 
 ![Opt_03_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/04772fc9-f942-454e-8aad-94bc16e2f20f)
 ![Opt_03_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/c2156def-ae79-434f-90b4-2503e2076279)
