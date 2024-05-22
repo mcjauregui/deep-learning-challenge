@@ -51,20 +51,18 @@ a) Adding more neurons to a hidden layer
 b) Adding more neurons to a hidden layer + Adding more hidden layers   
 c) Adding more neurons to a hidden layer + Adding more hidden layers + Adding the number of epochs to the training regimen  
 
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Orig_a.png  
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Orig_b.png
+![Orig_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/dc90f53a-c11f-49c5-adcf-c5cfef27ce27)
 
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_01_a.png  
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Op01_b.png  
+![Orig_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/995ccdb0-d4b8-407b-a0f7-5cfce584a0e8)
 
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_02_a.png  
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_02_b.png  
+![Opt_01_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/9a23f2d7-c277-4184-9c07-87eadf93cd42)
 
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_03_a.png  
-https://github.com/mcjauregui/deep-learning-challenge/blob/main/Images/Opt_03_b.png  
+![Op01_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/995953e9-153d-4ec7-bc9b-bab5de9e4ee7)
 
+![Opt_02_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/1d826fb7-1a73-4a08-bf28-a6baeacc28a4)
+![Opt_02_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/c09b2d64-01e0-439a-b6c6-cec1f56695ea)
 
-
-
+![Opt_03_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/04772fc9-f942-454e-8aad-94bc16e2f20f)
+![Opt_03_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/c2156def-ae79-434f-90b4-2503e2076279)
 
 
