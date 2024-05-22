@@ -41,8 +41,6 @@ f) Compiling and training the binary classification model
 g) Evaluating the model using the test data to determine the model's loss and accuracy values  
 h) Save and export the results to an HDF5 file named AlphabetSoupCharity.h5 
 
-If necessary, add a second hidden layer with an appropriate activation function.  
-
 Step 3: Optimize the Model
 I made three adjustments to the initial model, attempting to optimize the model to achieve a target predictive accuracy higher than 75%.  
 I created a new Google Colab file, AlphabetSoupCharity_Optimization.ipynb, using the same dependencies, dataset, and preprocessing techniques as before. This file is AlphabetSoupCharity_Optimization.h5.    
@@ -55,7 +53,7 @@ Analysis:
 
 The initial model contained 3 layers: an input, an output, and one hidden.  Layers 1 and 2 contained 6 neurons and layer 3 contained 1, for a total of 13. Across the 10 epochs, loss fluctuated by stayed around the 0.565 point. Similarly, accuracy remained around 0.72. The final loss and accuracy values with the test data ended up at 0.733 and 0.556. The model did not do a good job at predicting nonprofit success.   
 
-![Orig_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/fa68671c-6993-4327-bfe0-b36acd204e40)
+![Orig_a](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/c5be5ddd-2305-4915-89c2-acd131024e0d)
 ![Orig_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/019cf750-5c56-4c28-a8ac-7f8b84415c2c)
 
 The first attempt a optimizing the model entailed holding the number of layers and epochs the same but doubling the number of neurons in layers 1 and 2. This resulted in a total number of neurons equal to 25. This adjustment resulted in a loss of 1.128 and an accuracy of 0.664, which means the adjusted model was slightly better at predicting nonprofit success. 
@@ -74,3 +72,6 @@ In the third optimization attempts, I increased only the number of epochs during
 ![Opt_03_b](https://github.com/mcjauregui/deep-learning-challenge/assets/151464511/70069f02-6fc2-4456-aad9-becf7708853f)
 
 The highest accuracy score of any of the model versions was 0.664, or 66.4%. This result came from the first modification to the initial model, the one with 3 layers and 25 nuerons. Subsequent 'boosts' were unsuccessful in yielding a higher accuracy value. In fact the results of the second and third model modifications yielded lower accuracy scores. 
+
+Summary: 
+None of the model versions were able to reach the 75%+ target. In looking at the input data, this does not surprise me. The data set appears to be a snapshot of the nonprofits at the time of application to the foundation, plus a 1 or 0 value indicating whether they used their grant successfully. The data do not reflect any behavioral characteristics of the nonprofits during their usage of their foundation grants. I would bet that a variable reflecting whether the nonprofit paid its staff and suppliers on time during the period the grant was in effect, for example, would be a more relevant predictor of outcome (success) than type of nonprofit or the size range of its income. 
